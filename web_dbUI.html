@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style_2208A.css" rel="stylesheet" type="text/css">
+        <title>SUROS 蘇羅士科技</title>
+    </head>
+    <body>
+        <span class="block_head">    <!--banner-->
+            <span class="block_25x20">
+                <img class="logo_suros" src="image/suros_2208A.jpg" />
+            </span>
+            <span class="block_75x20">
+                <span class="title_head">外部資產調查報告查詢</span>
+            </span>
+        </span>
+        <div class="block_body">
+            <form>
+                <div class="block_35x30">    <!--search-->
+                    <input class ="search_bar1" type="text" name="search_name" id="search_nameKey" placeholder="請輸公司名" />
+                    <input class ="search_bar2" type="text" name="search_url" id="search_urlKey" placeholder="請輸入網址" />
+                    <button class="icon_search" type="submit" name="go_search" id="searchBtn" onclick="<?php echo $reList; ?>"><img src="image/search_2208A.png" /></button>
+                    <button class="icon_del" type="reset" name="clear_input" id="clearBtn"><img src="image/del_2208A.png" /></button>
+                </div>
+                <hr class="line_35A" />
+                <div class="block_35x50">    <!--filter-->
+                    <input class="check_box" type="checkbox" name="filter_edu" id="edu" />
+                    <label class="txt_with_box">教育知識</label>
+                    <input class="check_box" type="checkbox" name="filter_fin" id="fin" />
+                    <label class="txt_with_box">金融業</label>
+                    <input class="check_box" type="checkbox" name="filter_gov" id="gov" />
+                    <label class="txt_with_box">政府機關</label>
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_life" id="life" />
+                    <label class="txt_with_box">能源環境</label>
+                    <input class="check_box" type="checkbox" name="filter_medi" id="medi" />
+                    <label class="txt_with_box">醫藥業</label>
+                    <input class="check_box" type="checkbox" name="filter_net" id="net" />
+                    <label class="txt_with_box">電網資訊</label>
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_manu" id="manu" />
+                    <label class="txt_with_box">傳統產業</label>
+                    <input class="check_box" type="checkbox" name="filter_serv" id="serv" />
+                    <label class="txt_with_box">服務業</label>
+                    <input class="check_box" type="checkbox" name="filter_stor" id="stor" />
+                    <label class="txt_with_box">百貨零售</label>
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_tech" id="tech" />
+                    <label class="txt_with_box">電子科技</label>
+                    <input class="check_box" type="checkbox" name="filter_com" id="com" />
+                    <label class="txt_with_box">其它</label>
+                    <hr class="line_35B1" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_stockA" id="stockA" />
+                    <label class="txt_with_box">上市</label>
+                    <input class="check_box" type="checkbox" name="filter_stockB" id="stockB" />
+                    <label class="txt_with_box">上櫃</label>
+                    <input class="check_box" type="checkbox" name="filter_stockC" id="stockC" />
+                    <label class="txt_with_box">興櫃</label>
+                    <hr class="line_35B2" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_100" id="100" />
+                    <label class="txt_with_box">100大</label>
+                    <input class="check_box" type="checkbox" name="filter_300" id="300" />
+                    <label class="txt_with_box">300大</label>
+                    <hr class="line_35B3" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input class="check_box" type="checkbox" name="filter_0050" id="0050" />
+                    <label class="txt_with_box">台50</label>
+                    <br />
+                    <br />
+                    <button class="icon_filter" type="button" name="go_filter" id="filterBtn"><img src="image/filter_2208A.png"></button>
+                    <button class="icon_no_filter" type="button" name="clear_filters" id="clearBtn"><img src="image/no_filter_2208A.png"></button>
+                </div>
+                <div class="block_65x80">    <!--result list-->
+                    <ul class="list_header">
+                        <li class="list_name">　公　　司　　名　　稱　　</li>
+                        <li class="list_date">日　期　</li>
+                        <li class="list_file">報告檔案　</li>
+                    </ul>
+                    <div class="list_row">
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱1</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱2</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱3</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱4</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱5</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱6</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱7</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱8</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱9</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱10</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱11</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱12</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱13</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list_name">這邊是要預留十五個字的公司名稱14</li>
+                            <li class="list_date">2022/10/18</li>
+                            <li class="list_file">
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.pdf"><img src="image/pdf_2208A.png" class="img" /></a>
+                                　<a href="/SUROS_BI/DBReports_PN220815A1/21風味館_pec21c.com.tw/pec21c.com.tw_brief_P211013.csv"><img src="image/csv_2208A.png" class="img"　／></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <?php
+            $iptSearch = $_POST['search_name'];    //input search key
+            $pathPy = 'python web_dbAPI_main.py ';    //python file path with one space in the end
+            $reList = exec ($pathPy.$iptSearch);    //execute cmd to run python
+            $reList = iconv('big5', 'utf-8', $reList);    //transfer text encode
+            echo $reList;
+            ?>
+            <footer>
+                <p>Copyright © 2022 SUROS Inc. 蘇羅士科技股份有限公司</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
